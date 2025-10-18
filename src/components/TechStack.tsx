@@ -15,10 +15,10 @@ const TechStack = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Technologies We <span className="bg-gradient-primary bg-clip-text text-transparent">Master</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-slide-up">
+            Technologies We <span className="bg-gradient-primary bg-clip-text text-transparent animate-glow">Master</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Industry-leading technologies and frameworks powering enterprise solutions
           </p>
         </div>
@@ -28,7 +28,8 @@ const TechStack = () => {
             <Badge 
               key={index}
               variant="outline"
-              className="px-6 py-3 text-base border-2 border-primary/30 hover:border-primary hover:shadow-xl transition-all duration-300 cursor-default crystal-effect font-medium"
+              className="px-6 py-3 text-base border-2 border-primary/30 hover:border-primary hover:shadow-xl hover:scale-110 transition-all duration-300 cursor-default crystal-effect font-medium animate-fade-in"
+              style={{ animationDelay: `${0.05 * index}s` }}
             >
               {tech}
             </Badge>

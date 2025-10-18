@@ -28,17 +28,17 @@ const Contact = () => {
     <section className="py-24 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's Build <span className="bg-gradient-primary bg-clip-text text-transparent">Together</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 animate-slide-up">
+            Let{"'"}s Build <span className="bg-gradient-primary bg-clip-text text-transparent animate-glow">Together</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Ready to elevate your business with innovative IT solutions? Contact us today
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <Card className="crystal-effect border-2 border-primary/20 shadow-xl">
+          <Card className="crystal-effect border-2 border-primary/20 shadow-xl animate-slide-in-right">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -87,7 +87,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="crystal-effect border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
+            <Card className="crystal-effect border-2 border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center shrink-0 shadow-lg">
                   <Mail className="w-7 h-7 text-white" />
@@ -100,7 +100,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="crystal-effect border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
+            <Card className="crystal-effect border-2 border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: '0.4s' }}>
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center shrink-0 shadow-lg">
                   <Phone className="w-7 h-7 text-white" />
@@ -113,7 +113,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="crystal-effect border-2 border-primary/20 hover:shadow-xl transition-all duration-300">
+            <Card className="crystal-effect border-2 border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 animate-slide-up" style={{ animationDelay: '0.6s' }}>
               <CardContent className="p-6 flex items-start gap-4">
                 <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center shrink-0 shadow-lg">
                   <MapPin className="w-7 h-7 text-white" />
