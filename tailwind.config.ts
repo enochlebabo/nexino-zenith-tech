@@ -51,11 +51,13 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-primary': 'var(--gradient-primary)',
-        'gradient-glow': 'var(--gradient-glow)',
+        'gradient-crystal': 'var(--gradient-crystal)',
+        'gradient-shine': 'var(--gradient-shine)',
       },
       boxShadow: {
-        'glow-cyan': 'var(--glow-cyan)',
-        'glow-purple': 'var(--glow-purple)',
+        'crystal': 'var(--shadow-crystal)',
+        'elevated': 'var(--shadow-elevated)',
+        'glow-crystal': 'var(--glow-crystal)',
       },
       transitionTimingFunction: {
         'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',

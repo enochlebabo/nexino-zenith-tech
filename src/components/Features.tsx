@@ -1,36 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Cloud, Cpu, Lock, Zap, Globe, Database } from "lucide-react";
+import { Code2, Cloud, Headphones, Users, Database, Cpu } from "lucide-react";
 
 const features = [
   {
+    icon: Code2,
+    title: "Custom Software Development",
+    description: "Tailored software solutions designed to meet your specific business needs with scalable architecture.",
+  },
+  {
     icon: Cloud,
-    title: "Cloud Infrastructure",
-    description: "Scalable cloud solutions built for enterprise-level performance and reliability.",
-  },
-  {
-    icon: Cpu,
-    title: "AI & Machine Learning",
-    description: "Cutting-edge AI algorithms that learn and adapt to your business needs.",
-  },
-  {
-    icon: Lock,
-    title: "Advanced Security",
-    description: "Military-grade encryption and security protocols to protect your data.",
-  },
-  {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Optimized performance delivering results in milliseconds, not seconds.",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach",
-    description: "Worldwide infrastructure ensuring low latency and high availability.",
+    title: "Cloud Solutions",
+    description: "Expert cloud migration, deployment, and management services for AWS, Azure, and Google Cloud.",
   },
   {
     icon: Database,
-    title: "Data Analytics",
-    description: "Real-time insights and analytics to drive informed business decisions.",
+    title: "IT Infrastructure",
+    description: "Robust IT infrastructure design, implementation, and maintenance for enterprise-grade systems.",
+  },
+  {
+    icon: Cpu,
+    title: "System Integration",
+    description: "Seamless integration of legacy and modern systems to optimize your technology ecosystem.",
+  },
+  {
+    icon: Users,
+    title: "IT Consulting",
+    description: "Strategic technology consulting to guide your digital transformation and innovation initiatives.",
+  },
+  {
+    icon: Headphones,
+    title: "Managed IT Services",
+    description: "24/7 monitoring, support, and maintenance to keep your systems running at peak performance.",
   },
 ];
 
@@ -40,10 +40,10 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Powerful <span className="bg-gradient-primary bg-clip-text text-transparent">Features</span>
+            Our <span className="bg-gradient-primary bg-clip-text text-transparent">IT Services</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Comprehensive technology solutions designed to accelerate your digital transformation
+            Comprehensive software and IT solutions to drive your business forward
           </p>
         </div>
 
@@ -51,16 +51,16 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="glass-effect border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow-cyan group"
+              className="crystal-effect border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-xl group"
             >
               <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-6 h-6 text-background" />
+                <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
+                  <feature.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                <h3 className="text-xl font-semibold mb-3 text-foreground">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </CardContent>
